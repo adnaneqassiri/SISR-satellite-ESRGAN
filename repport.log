@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.26)  5 JAN 2026 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.26)  6 JAN 2026 00:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -637,7 +637,11 @@ Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count375
 \l__pdf_internal_box=\box73
-) (./repport.aux)
+) (./repport.aux
+
+LaTeX Warning: Label `PerceptualLoss' multiply defined.
+
+)
 \openout1 = `repport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -726,7 +730,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<logos/Logo-ENSA.png, id=183, 3011.25pt x 1126.2075pt>
+<logos/Logo-ENSA.png, id=187, 3011.25pt x 1126.2075pt>
 File: logos/Logo-ENSA.png Graphic file (type png)
 <use logos/Logo-ENSA.png>
 Package pdftex.def Info: logos/Logo-ENSA.png  used on input line 76.
@@ -754,145 +758,164 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 14
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<Samples/image patche extraction.png, id=263, 2300.595pt x 970.62625pt>
+<Samples/image patche extraction.png, id=269, 2300.595pt x 970.62625pt>
 File: Samples/image patche extraction.png Graphic file (type png)
 <use Samples/image patche extraction.png>
 Package pdftex.def Info: Samples/image patche extraction.png  used on input line 171.
 (pdftex.def)             Requested size: 455.24411pt x 192.06314pt.
  [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<Samples/samples_viz.png, id=271, 1237.2624pt x 491.9178pt>
+<Samples/samples_viz.png, id=278, 1237.2624pt x 491.9178pt>
 File: Samples/samples_viz.png Graphic file (type png)
 <use Samples/samples_viz.png>
 Package pdftex.def Info: Samples/samples_viz.png  used on input line 185.
 (pdftex.def)             Requested size: 455.24411pt x 180.99341pt.
  [5 <./Samples/image patche extraction.png> <./Samples/samples_viz.png>] [6]
-<Architectures/SRCNN.png, id=287, 1227.58624pt x 422.57875pt>
+<Architectures/SRCNN.png, id=299, 1227.58624pt x 422.57875pt>
 File: Architectures/SRCNN.png Graphic file (type png)
 <use Architectures/SRCNN.png>
-Package pdftex.def Info: Architectures/SRCNN.png  used on input line 273.
+Package pdftex.def Info: Architectures/SRCNN.png  used on input line 269.
 (pdftex.def)             Requested size: 455.24411pt x 156.71277pt.
  [7] [8 <./Architectures/SRCNN.png>]
-<Architectures/residual_block.png, id=304, 798.985pt x 338.26375pt>
+<Architectures/residual_block.png, id=319, 798.985pt x 338.26375pt>
 File: Architectures/residual_block.png Graphic file (type png)
 <use Architectures/residual_block.png>
-Package pdftex.def Info: Architectures/residual_block.png  used on input line 347.
+Package pdftex.def Info: Architectures/residual_block.png  used on input line 343.
 (pdftex.def)             Requested size: 364.19667pt x 154.18895pt.
-<Architectures/sub-pixel.png, id=305, 1384.17125pt x 583.17876pt>
+<Architectures/sub-pixel.png, id=321, 1384.17125pt x 583.17876pt>
 File: Architectures/sub-pixel.png Graphic file (type png)
 <use Architectures/sub-pixel.png>
-Package pdftex.def Info: Architectures/sub-pixel.png  used on input line 356.
+Package pdftex.def Info: Architectures/sub-pixel.png  used on input line 352.
 (pdftex.def)             Requested size: 500.77129pt x 210.98532pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 356--357
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 352--353
  [][] 
  []
 
 [9 <./Architectures/residual_block.png (PNG copy)>]
-<Architectures/srresnet-architecture.png, id=312, 3323.41624pt x 2125.9425pt>
+<Architectures/srresnet-architecture.png, id=331, 3323.41624pt x 2125.9425pt>
 File: Architectures/srresnet-architecture.png Graphic file (type png)
 <use Architectures/srresnet-architecture.png>
-Package pdftex.def Info: Architectures/srresnet-architecture.png  used on input line 366.
+Package pdftex.def Info: Architectures/srresnet-architecture.png  used on input line 362.
 (pdftex.def)             Requested size: 455.24411pt x 291.20695pt.
  [10 <./Architectures/sub-pixel.png (PNG copy)>] [11 <./Architectures/srresnet-architecture.png (PNG copy)>]
-<Architectures/Residual_Block.png, id=325, 518.93875pt x 573.14125pt>
+<Architectures/Residual_Block.png, id=346, 518.93875pt x 573.14125pt>
 File: Architectures/Residual_Block.png Graphic file (type png)
 <use Architectures/Residual_Block.png>
-Package pdftex.def Info: Architectures/Residual_Block.png  used on input line 413.
+Package pdftex.def Info: Architectures/Residual_Block.png  used on input line 409.
 (pdftex.def)             Requested size: 227.62206pt x 251.39584pt.
-<Architectures/edsr_architecture.png, id=326, 711.65875pt x 436.63126pt>
+<Architectures/edsr_architecture.png, id=347, 711.65875pt x 436.63126pt>
 File: Architectures/edsr_architecture.png Graphic file (type png)
 <use Architectures/edsr_architecture.png>
-Package pdftex.def Info: Architectures/edsr_architecture.png  used on input line 451.
+Package pdftex.def Info: Architectures/edsr_architecture.png  used on input line 447.
 (pdftex.def)             Requested size: 318.66948pt x 195.51619pt.
  [12 <./Architectures/Residual_Block.png>]
-<Architectures/GAN-architecture.png, id=334, 1446.40375pt x 649.42625pt>
+<Architectures/GAN-architecture.png, id=357, 1446.40375pt x 649.42625pt>
 File: Architectures/GAN-architecture.png Graphic file (type png)
 <use Architectures/GAN-architecture.png>
-Package pdftex.def Info: Architectures/GAN-architecture.png  used on input line 481.
+Package pdftex.def Info: Architectures/GAN-architecture.png  used on input line 477.
 (pdftex.def)             Requested size: 364.19667pt x 163.51556pt.
  [13 <./Architectures/edsr_architecture.png>] [14 <./Architectures/GAN-architecture.png>]
-<Architectures/Gen_archi.png, id=348, 1378.14874pt x 334.24875pt>
+<Architectures/Gen_archi.png, id=377, 1378.14874pt x 334.24875pt>
 File: Architectures/Gen_archi.png Graphic file (type png)
 <use Architectures/Gen_archi.png>
-Package pdftex.def Info: Architectures/Gen_archi.png  used on input line 525.
+Package pdftex.def Info: Architectures/Gen_archi.png  used on input line 521.
 (pdftex.def)             Requested size: 455.24411pt x 110.40953pt.
-<Architectures/RRDB-archi.png, id=349, 1464.47125pt x 360.34625pt>
+<Architectures/RRDB-archi.png, id=378, 1464.47125pt x 360.34625pt>
 File: Architectures/RRDB-archi.png Graphic file (type png)
 <use Architectures/RRDB-archi.png>
-Package pdftex.def Info: Architectures/RRDB-archi.png  used on input line 535.
+Package pdftex.def Info: Architectures/RRDB-archi.png  used on input line 531.
 (pdftex.def)             Requested size: 455.24411pt x 112.01408pt.
-<Architectures/Disc_diagram-Page-1.drawio (3).png, id=350, 1289.81876pt x 325.215pt>
+<Architectures/Disc_diagram-Page-1.drawio (3).png, id=379, 1289.81876pt x 325.215pt>
 File: Architectures/Disc_diagram-Page-1.drawio (3).png Graphic file (type png)
 <use Architectures/Disc_diagram-Page-1.drawio (3).png>
-Package pdftex.def Info: Architectures/Disc_diagram-Page-1.drawio (3).png  used on input line 545.
+Package pdftex.def Info: Architectures/Disc_diagram-Page-1.drawio (3).png  used on input line 541.
 (pdftex.def)             Requested size: 455.24411pt x 114.78468pt.
  [15 <./Architectures/Gen_archi.png> <./Architectures/RRDB-archi.png>]
-Overfull \hbox (35.52423pt too wide) in paragraph at lines 552--552
+Overfull \hbox (35.52423pt too wide) in paragraph at lines 548--548
 []\T1/cmr/bx/n/14.4 MSFSSR : Multi-Scale and Frequency-Separated Super-Resolution
  []
 
-<Architectures/MSRB.jpeg, id=363, 1166.3575pt x 426.59375pt>
+<Architectures/MSRB.jpeg, id=394, 1166.3575pt x 426.59375pt>
 File: Architectures/MSRB.jpeg Graphic file (type jpg)
 <use Architectures/MSRB.jpeg>
-Package pdftex.def Info: Architectures/MSRB.jpeg  used on input line 567.
+Package pdftex.def Info: Architectures/MSRB.jpeg  used on input line 563.
 (pdftex.def)             Requested size: 364.19667pt x 133.19955pt.
 [16 <./Architectures/Disc_diagram-Page-1.drawio (3).png>]
-<Architectures/laplacianfilter.jpeg, id=370, 843.15pt x 391.4625pt>
+<Architectures/laplacianfilter.jpeg, id=403, 843.15pt x 391.4625pt>
 File: Architectures/laplacianfilter.jpeg Graphic file (type jpg)
 <use Architectures/laplacianfilter.jpeg>
-Package pdftex.def Info: Architectures/laplacianfilter.jpeg  used on input line 592.
+Package pdftex.def Info: Architectures/laplacianfilter.jpeg  used on input line 588.
 (pdftex.def)             Requested size: 364.19667pt x 169.09016pt.
  [17 <./Architectures/MSRB.jpeg>]
-<Architectures/MSFSSR.jpeg, id=379, 1606.0pt x 596.2275pt>
+<Architectures/MSFSSR.jpeg, id=413, 1606.0pt x 596.2275pt>
 File: Architectures/MSFSSR.jpeg Graphic file (type jpg)
 <use Architectures/MSFSSR.jpeg>
-Package pdftex.def Info: Architectures/MSFSSR.jpeg  used on input line 613.
+Package pdftex.def Info: Architectures/MSFSSR.jpeg  used on input line 609.
 (pdftex.def)             Requested size: 455.24411pt x 169.00774pt.
  [18 <./Architectures/laplacianfilter.jpeg>]
-<Architectures/content_loss.png, id=387, 2209.25375pt x 799.98875pt>
+<Architectures/content_loss.png, id=422, 2209.25375pt x 799.98875pt>
 File: Architectures/content_loss.png Graphic file (type png)
 <use Architectures/content_loss.png>
-Package pdftex.def Info: Architectures/content_loss.png  used on input line 645.
+Package pdftex.def Info: Architectures/content_loss.png  used on input line 641.
 (pdftex.def)             Requested size: 409.71692pt x 148.3618pt.
  [19 <./Architectures/MSFSSR.jpeg>] [20 <./Architectures/content_loss.png>] [21] [22]
-<plots/stage-1.png, id=423, 875.1897pt x 379.4175pt>
+<plots/stage-1.png, id=464, 875.1897pt x 379.4175pt>
 File: plots/stage-1.png Graphic file (type png)
 <use plots/stage-1.png>
-Package pdftex.def Info: plots/stage-1.png  used on input line 830.
+Package pdftex.def Info: plots/stage-1.png  used on input line 791.
 (pdftex.def)             Requested size: 409.71692pt x 177.61993pt.
  [23]
-<plots/stage-2.png, id=431, 875.1897pt x 390.258pt>
+<plots/stage-2.png, id=470, 875.1897pt x 390.258pt>
 File: plots/stage-2.png Graphic file (type png)
 <use plots/stage-2.png>
-Package pdftex.def Info: plots/stage-2.png  used on input line 851.
+Package pdftex.def Info: plots/stage-2.png  used on input line 812.
 (pdftex.def)             Requested size: 455.24411pt x 202.99487pt.
  [24 <./plots/stage-1.png>]
-<plots/val_and_train_comparaison.png, id=441, 1395.2125pt x 592.2125pt>
+<plots/val_and_train_comparaison.png, id=479, 1395.2125pt x 592.2125pt>
 File: plots/val_and_train_comparaison.png Graphic file (type png)
 <use plots/val_and_train_comparaison.png>
-Package pdftex.def Info: plots/val_and_train_comparaison.png  used on input line 870.
+Package pdftex.def Info: plots/val_and_train_comparaison.png  used on input line 831.
 (pdftex.def)             Requested size: 455.24411pt x 193.23486pt.
- [25 <./plots/stage-2.png>] [26 <./plots/val_and_train_comparaison.png (PNG copy)>] [27] (./repport.aux)
+ [25 <./plots/stage-2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 842--844
+
+ []
+
+[26 <./plots/val_and_train_comparaison.png (PNG copy)>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 947--949
+[][]$\T1/cmtt/m/n/12 https : / / www . kaggle . com / datasets / cristobaltudela /
+ []
+
+[28
+pdfTeX warning (ext4): destination with the same identifier (name{cite.PerceptualLoss}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.953 \end{document}
+                    ] (./repport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `repport.out' has not changed.
-(rerunfilecheck)             Checksum: BB4C3D03B1CD89C1F3822B43CE9548D1;9504.
+(rerunfilecheck)             Checksum: 885254663FED5A7CBFF355FD5DA426B8;9607.
  ) 
 Here is how much of TeX's memory you used:
- 26771 strings out of 474222
- 484486 string characters out of 5748732
+ 26785 strings out of 474222
+ 484625 string characters out of 5748732
  1936975 words of memory out of 5000000
- 48450 multiletter control sequences out of 15000+600000
+ 48458 multiletter control sequences out of 15000+600000
  575145 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,117p,961b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on repport.pdf (28 pages, 7778154 bytes).
+ 84i,9n,117p,966b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on repport.pdf (29 pages, 7795287 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
- 138 named destinations out of 1000 (max. 500000)
- 465 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 473 words of extra memory for PDF output out of 10000 (max. 10000000)
 

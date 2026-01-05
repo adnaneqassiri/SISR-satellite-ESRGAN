@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1767644886.80186 "/home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex" "repport.pdf" "repport" 1767644888.83743 0
+["pdflatex"] 1767655144.19412 "/home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex" "repport.pdf" "repport" 1767655147.29301 0
   "/etc/texmf/web2c/texmf.cnf" 1766762978.09617 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex" 1767644884.54405 53029 e4dc2ab1904d014e35c1e5fc610a5606 ""
+  "/home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex" 1767655142.71412 57171 84c8566fcc128b3e0c489a2e8386d644 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -45,6 +45,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -231,10 +232,10 @@
   "plots/stage-1.png" 1767641143.92557 53826 0209c795c966c947c23f779afcc8482f ""
   "plots/stage-2.png" 1767641143.9262 65534 08e53e9b3dea222784c6c533b58653e4 ""
   "plots/val_and_train_comparaison.png" 1767641143.92696 153204 be962da4a873372b52a6e62c9c662523 ""
-  "repport.aux" 1767644888.74201 13970 2ac9e871132da9dbf10769b6569f8039 "pdflatex"
-  "repport.out" 1767644888.74301 9504 bb4c3d03b1cd89c1f3822b43ce9548d1 "pdflatex"
-  "repport.tex" 1767644884.54405 53029 e4dc2ab1904d014e35c1e5fc610a5606 ""
-  "repport.toc" 1767644888.74401 5675 91945bf75ed97830e30ed33c0545d3df "pdflatex"
+  "repport.aux" 1767655147.1531 14250 e2b11c31546505d33b3b8babbe13b43d "pdflatex"
+  "repport.out" 1767655147.1551 9607 885254663fed5a7cbff355fd5da426b8 "pdflatex"
+  "repport.tex" 1767655142.71412 57171 84c8566fcc128b3e0c489a2e8386d644 ""
+  "repport.toc" 1767655147.1561 5525 1ae790ae31d2220d7a7ed9aef0f1af5d "pdflatex"
   (generated)
   "repport.aux"
   "repport.log"

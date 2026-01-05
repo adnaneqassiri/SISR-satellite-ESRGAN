@@ -155,7 +155,7 @@ All image pairs are geo-aligned, meaning that corresponding pixels in LR and HR 
 \subsection{Image Dimensions and Patch-Based Preprocessing}
 
 The original high-resolution (HR) satellite images have large spatial dimensions of approximately $3000 \times 3000$ pixels.  
-Training super-resolution models directly on full-resolution images is computationally expensive and inefficient in terms of GPU memory usage. To overcome this limitation, we adopt a \textbf{patch-based preprocessing and training strategy}, which is a standard and effective practice in computer vision and image super-resolution.
+Training super-resolution models directly on full-resolution images is computationally expensive and inefficient in terms of GPU memory usage. To overcome this limitation, we adopt a \textbf{patch-based preprocessing and training strategy} \cite{patch}, which is a standard and effective practice in computer vision and image super-resolution.
 
 In this approach, each large image is decomposed into smaller, fixed-size patches that can be processed independently by the neural network. An image patch represents a localized region of the image and contains sufficient contextual information to learn spatial patterns such as edges, textures, and structural details.
 
@@ -204,7 +204,7 @@ Although PSNR is widely adopted due to its simplicity and interpretability, it d
 
 \subsubsection{Structural Similarity Index Measure (SSIM)}
 
-The Structural Similarity Index Measure (SSIM) evaluates perceptual similarity by comparing local patterns of luminance, contrast, and structural information between the reconstructed image $\hat{y}$ and the reference image $y$.
+The Structural Similarity Index Measure (SSIM) \cite{SSIM} evaluates perceptual similarity by comparing local patterns of luminance, contrast, and structural information between the reconstructed image $\hat{y}$ and the reference image $y$.
 
 \[
 \mathrm{SSIM}(y,\hat{y}) =
@@ -217,7 +217,7 @@ SSIM correlates better with human visual perception than PSNR, as it explicitly 
 
 \subsubsection{Learned Perceptual Image Patch Similarity (LPIPS)}
 
-Learned Perceptual Image Patch Similarity (LPIPS) is a perceptual similarity metric designed to align closely with human judgments of image quality.  
+Learned Perceptual Image Patch Similarity (LPIPS) \cite{LPIPS} is a perceptual similarity metric designed to align closely with human judgments of image quality.  
 Instead of relying on pixel-wise differences, LPIPS computes distances between deep feature representations extracted from multiple layers of pretrained convolutional neural networks (e.g., VGG or AlexNet).
 
 Formally, given two images $y$ and $\hat{y}$, LPIPS measures the weighted $\ell_2$ distance between their normalized feature maps:
@@ -237,14 +237,10 @@ Together, PSNR, SSIM, and LPIPS provide a comprehensive evaluation framework tha
 \section{Models Development}
 
 
-% ==============================================
-
-
-
 
 \subsection{SRCNN: Super-Resolution Convolutional Neural Network}
 
-The Super-Resolution Convolutional Neural Network (SRCNN) represents the first
+The Super-Resolution Convolutional Neural Network (SRCNN) \cite{SRCNN}represents the first
 successful deep learning-based approach applied to the problem of single-image
 super-resolution. Proposed by Dong et al., this model introduces an end-to-end
 learning formulation that directly learns the mapping between a low-resolution
@@ -327,9 +323,9 @@ approaches and enables a direct and coherent reconstruction of the image.
   search focused on improving reconstruction accuracy by increasing network
   depth. However, directly deepening SRCNN-style architectures leads to trai-
   ning difficulties such as vanishing gradients and slow convergence. To address
-  these limitations, SRResNet(site) was proposed as a more advanced deep lear-
+  these limitations, SRResNet \cite{ESRGAN} was proposed as a more advanced deep lear-
   ning architecture for SISR. It adopts the residual learning framework introdu-
-  ced in ResNet(site), allowing the network to learn residual mappings instead
+  ced in ResNet \cite{ResNet}, allowing the network to learn residual mappings instead
   of directly predicting the high-resolution image from the low-resolution in-
   put. By learning only the difference between the interpolated LR image and
   its HR counterpart, SRResNet simplifies the learning task and enables the
@@ -350,7 +346,7 @@ where $\mathcal{F}(\mathbf{x}_l)$ represents the nonlinear transformation learne
     \end{figure}
 
   \subsubsection{Sub-pixel convolution }
-  The sub-pixel convolution layer in SRResNet serves as the upsampling mechanism that transforms low-resolution feature maps into high-resolution outputs. Unlike traditional interpolation methods, sub-pixel convolution learns the upsampling process through data-driven training. It works by applying convolutional operations to increase the number of channels, then rearranging these channels into spatial dimensions via a process known as period shuffling. Specifically, SRResNet employs two such layers to achieve a 4× upscaling factor
+  The sub-pixel convolution \cite{SubPixel} layer in SRResNet serves as the upsampling mechanism that transforms low-resolution feature maps into high-resolution outputs. Unlike traditional interpolation methods, sub-pixel convolution learns the upsampling process through data-driven training. It works by applying convolutional operations to increase the number of channels, then rearranging these channels into spatial dimensions via a process known as period shuffling. Specifically, SRResNet employs two such layers to achieve a 4× upscaling factor
     \begin{figure}[H]
         \centering
         \includegraphics[width=1.1\textwidth]{Architectures/sub-pixel.png}
@@ -381,7 +377,7 @@ where $\mathcal{F}(\mathbf{x}_l)$ represents the nonlinear transformation learne
 
 Following SRResNet, which demonstrated the effectiveness of residual connections
 for single-image super-resolution, the \textbf{Enhanced Deep Residual Network
-(EDSR)} proposes a refined revision of the residual architecture in order to
+(EDSR)} \cite{EDSR} proposes a refined revision of the residual architecture in order to
 better adapt it to low-level image reconstruction tasks. Introduced by Lim et
 al., EDSR does not challenge the residual learning principle itself, but rather
 builds upon a critical analysis of architectural choices inherited from
@@ -463,7 +459,7 @@ pipeline structure remains unchanged.
 
 
 \subsection{ESRGAN: Enhanced Super Resolution GAN}
-ESRGAN is the enhanced version of the \textbf{SRGAN (cite)}. The authors of ESRGAN aimed to improve super-resolution performance by modifying both the \textbf{model architecture} and the \textbf{loss functions}.
+ESRGAN \cite{ESRGAN} is the enhanced version of the \textbf{SRGAN } \cite{SRGAN}. The authors of ESRGAN aimed to improve super-resolution performance by modifying both the \textbf{model architecture} and the \textbf{loss functions}.
 
 \subsubsection{GAN: Generative Adversarial Network}
 A \textbf{Generative Adversarial Network (GAN)} consists of two neural networks trained in an \textbf{adversarial manner}: a \textbf{generator} $G$ and a \textbf{discriminator} $D$. The generator aims to produce \textbf{synthetic samples} that resemble real data, while the discriminator attempts to \textbf{distinguish real samples from generated ones}.
@@ -483,7 +479,7 @@ During \textbf{adversarial training}, the discriminator learns to improve its \t
     \label{fig:gan_architecture}
    \end{figure}
 \subsubsection{Adversarial Loss in ESRGAN}
-To improve perceptual realism, ESRGAN adopts an adversarial loss based on the \textbf{Relativistic Average GAN (RaGAN) (cite)} framework. Unlike standard GANs, where the discriminator predicts the probability of an image being real or fake independently, RaGAN estimates the probability that a real image appears more realistic than a generated one.
+To improve perceptual realism, ESRGAN adopts an adversarial loss based on the \textbf{Relativistic Average GAN (RaGAN) } \cite{RAGAN} framework. Unlike standard GANs, where the discriminator predicts the probability of an image being real or fake independently, RaGAN estimates the probability that a real image appears more realistic than a generated one.
 
 Let $x_r \sim p_{data}$ denote a real high-resolution image and $x_f = G(I_{LR})$ a generated image. The relativistic discriminator output is defined as:
 \[
@@ -503,7 +499,7 @@ The adversarial loss for the generator is then expressed as:
 
 This relativistic formulation provides more informative gradients and improves training stability, leading to sharper and more realistic textures.
 
-In ESRGAN, the generator is optimized using a \textbf{weighted combination} of adversarial loss, \textbf{perceptual (content) loss (cite)}, and \textbf{pixel-wise $L_1$ loss (cite)}. The complete generator objective is defined as:
+In ESRGAN, the generator is optimized using a \textbf{weighted combination} of adversarial loss, \textbf{perceptual (content) loss }, and \textbf{pixel-wise $L_1$ loss }. The complete generator objective is defined as:
 \[
 \mathcal{L}_{G} =
 \lambda_{adv}\mathcal{L}_{adv}^{G}
@@ -513,7 +509,7 @@ In ESRGAN, the generator is optimized using a \textbf{weighted combination} of a
 where $\lambda_{adv}$, $\lambda_{perc}$, and $\lambda_{L1}$ control the contribution of each loss term.
 
 \subsubsection{Networks Architecture}
-The architecture of ESRGAN is based on SRGAN(site) with key modifications to improve perceptual quality. The main enhancement is the introduction of \textbf{Residual-in-Residual Dense Blocks (RRDB) (cite resnet and densenet)}, which combine multi-level residual learning and dense connections while removing Batch Normalization.
+The architecture of ESRGAN is based on SRGAN \cite{SRGAN} with key modifications to improve perceptual quality. The main enhancement is the introduction of \textbf{Residual-in-Residual Dense Blocks (RRDB) } \cite{ResNet,DenseNet}, which combine multi-level residual learning and dense connections while removing Batch Normalization.
 
 \paragraph{Main Components}
 
@@ -561,7 +557,7 @@ To address these limitations, we propose \textbf{MSFSSR}, a \textit{Multi-Scale 
 
 \subsubsection{Multi-Scale Residual Block Definition}
 
-To enrich early feature representations, MSFSSR uses a \textbf{Multi-Scale Residual Block (MSRB)}(site). Unlike conventional residual blocks that employ a single convolutional kernel size, the MSRB captures spatial information at multiple receptive fields using parallel convolutional operations.
+To enrich early feature representations, MSFSSR uses a \textbf{Multi-Scale Residual Block (MSRB)} \cite{MSRB}. Unlike conventional residual blocks that employ a single convolutional kernel size, the MSRB captures spatial information at multiple receptive fields using parallel convolutional operations.
   \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{Architectures/MSRB.jpeg}
@@ -584,7 +580,7 @@ This structure enables the network to simultaneously capture fine-grained textur
 
 Following multi-scale feature enhancement, MSFSSR explicitly decomposes feature representations into low-frequency (LF) and high-frequency (HF) components. This design is motivated by the observation that smooth structures and fine details exhibit distinct characteristics and should be processed differently.
 
-The low-frequency branch consists of a sequence of residual blocks that model large-scale structures and smooth regions, ensuring global consistency. In contrast, the high-frequency branch begins with a fixed Laplacian convolution, acting as a high-pass filter that emphasizes edges and fine details. The extracted high-frequency features are subsequently refined using residual blocks.
+The low-frequency branch consists of a sequence of residual blocks that model large-scale structures and smooth regions, ensuring global consistency. In contrast, the high-frequency branch begins with a fixed Laplacian convolution \cite{Laplacian}, acting as a high-pass filter that emphasizes edges and fine details. The extracted high-frequency features are subsequently refined using residual blocks.
 
 The Laplacian kernel is non-learnable, introducing an explicit inductive prior that enforces edge-aware feature extraction and improves training stability.
   \begin{figure}[H]
@@ -638,7 +634,7 @@ Due to its reduced sensitivity to outliers compared to the L2 loss, the L1 loss 
 
 \subparagraph{Perceptual (Content) Loss}
 Pixel-wise loss functions are limited in their ability to capture perceptual similarity, as they operate solely at the pixel level. 
-To incorporate higher-level semantic and structural information, a perceptual content loss is defined using feature representations extracted from a fixed, pre-trained convolutional network.
+To incorporate higher-level semantic and structural information, a perceptual content loss \cite{PerceptualLoss} is defined using feature representations extracted from a fixed, pre-trained convolutional network.
 
 \begin{figure}[H]
     \centering
@@ -660,14 +656,14 @@ The perceptual content loss is defined as:
 \end{equation}
 where $C_l$, $H_l$, and $W_l$ denote the number of channels, height, and width of the selected feature map, respectively.
 
-In this work, features are extracted from layer 34 of the VGG-19 network, corresponding to the last convolutional layer before the activation function. 
+In this work, features are extracted from layer 34 of the VGG-19 network \cite{VGG}, corresponding to the last convolutional layer before the activation function. 
 Using pre-activation features preserves linear feature representations and avoids distortions introduced by non-linear activations, resulting in more stable gradients and a more reliable measure of content similarity.
 
 
 
 \subsubsection{Optimizer}
 
-Model parameters are optimized using the Adam optimizer, which combines the benefits of momentum-based updates and adaptive learning rates.
+Model parameters are optimized using the Adam \cite{Adam} optimizer, which combines the benefits of momentum-based updates and adaptive learning rates.
 Given gradients $g_t$ at iteration $t$, Adam computes biased first and second moment estimates:
 \begin{align}
 m_t &= \beta_1 m_{t-1} + (1 - \beta_1) g_t, \\
@@ -748,78 +744,43 @@ The training of ESRGAN is conducted in two stages to ensure training stability a
 \end{enumerate}
 
 
-\subsubsection{Training Setup for Custom Handcrafted Models}
+\subsubsection{Training Setup for MSFSSR Model}
 
-In addition to the standard super-resolution architectures, two custom models
-designed and implemented from scratch were also evaluated. In order to maintain
-experimental consistency and ensure a fair comparison with the reference models,
-both custom architectures were trained using the same data preprocessing
-pipeline, optimization strategy, and learning rate scheduling as described in
-the unified training setup.
+The \textbf{MSFSSR} (Multi-Scale Frequency-Separated Super-Resolution) model was designed to balance reconstruction fidelity and perceptual quality without adversarial training. To ensure a fair comparison with existing super-resolution architectures, MSFSSR was trained using the same data preprocessing pipeline, optimization strategy, and learning rate scheduling as described in the unified training setup for reconstruction-based models.
 
 \paragraph{Shared Training Configuration}
 
-Both handcrafted models are trained using a batch size of 64 and 8 data loader
-workers. Training is conducted for 70 epochs with an initial learning rate of
-$1 \times 10^{-4}$ and no weight decay applied. Data augmentation is enabled
-during training to improve robustness and generalization, particularly for
-satellite imagery where spatial invariance is desirable.
+MSFSSR was trained using a batch size of 64 with 8 data loader workers. Training was conducted for 70 epochs with an initial learning rate of \(1 \times 10^{-4}\) and no weight decay. Data augmentation---including random horizontal/vertical flips and rotations---was applied to improve robustness and generalization, particularly beneficial for satellite imagery where rotational invariance is expected.
 
-The Adam optimizer is employed with momentum parameters $\beta_1 = 0.9$ and
-$\beta_2 = 0.999$. A multi-step learning rate scheduler is applied, reducing the
-learning rate by a factor of 0.5 at epochs 15, 30, and 45. This schedule allows
-the models to progressively refine high-frequency details during later training
-stages.
+The Adam optimizer was employed with momentum parameters \(\beta_1 = 0.9\) and \(\beta_2 = 0.999\). A multi-step learning rate scheduler was applied, reducing the learning rate by a factor of 0.5 at epochs 15, 30, and 45. This schedule allowed the model to progressively refine high-frequency details in later training stages.
 
-\paragraph{Loss Function Variants}
+\paragraph{Loss Function Variants for Ablation Study}
 
-The two custom models differ exclusively in the choice of the training loss
-function, allowing an isolated analysis of the impact of perceptual supervision
-on reconstruction quality.
+To evaluate the impact of perceptual supervision on MSFSSR's performance, two training configurations were compared:
 
-\subparagraph{Custom Model with Perceptual-Pixel Combined Loss}
-
-The first custom model is trained using a composite loss function that combines
-pixel-level accuracy with perceptual similarity. In addition to the $\ell_1$
-pixel loss, a perceptual loss is introduced using feature representations
-extracted from the \texttt{relu3\_3} layer of a pretrained VGG network.
+\textbf{MSFSSR with Perceptual-Pixel Combined Loss}  
+This variant was trained using a composite loss function that combines pixel-level accuracy with perceptual similarity. In addition to the \(\ell_1\) pixel loss, a perceptual loss was incorporated using feature representations extracted from the \textbf{relu3\_3} layer of a pre-trained VGG-19 network.
 
 The total loss is defined as:
+
 \[
-\mathcal{L}_{custom} =
-\mathcal{L}_{L1}
-+ \lambda_{p} \, \mathcal{L}_{perc},
-\]
-where $\mathcal{L}_{L1}$ denotes the pixel-wise $\ell_1$ loss,
-$\mathcal{L}_{perc}$ represents the perceptual loss, and $\lambda_{p} = 5 \times
-10^{-4}$ is a weighting factor that balances the contribution of perceptual
-features.
-
-This formulation encourages the network to preserve both numerical accuracy and
-high-level structural information, leading to visually sharper reconstructions.
-
-\subparagraph{Custom Model with Pixel-Wise Loss Only}
-
-The second custom model is trained exclusively using the $\ell_1$ reconstruction
-loss:
-\[
-\mathcal{L}_{L1} = \frac{1}{N} \sum_{i=1}^{N} \left| \hat{y}_i - y_i \right|.
+\mathcal{L}_{\text{MSFSSR}} = \mathcal{L}_{\ell_1} + \lambda_p \cdot \mathcal{L}_{\text{perc}},
 \]
 
-This configuration serves as a baseline for evaluating the effect of perceptual
-supervision. By relying solely on pixel-level discrepancies, this model favors
-numerical fidelity but may produce smoother textures compared to its
-perceptually supervised counterpart.
+where \(\mathcal{L}_{\ell_1}\) denotes the pixel-wise \(\ell_1\) loss, \(\mathcal{L}_{\text{perc}}\) represents the perceptual loss, and \(\lambda_p = 5 \times 10^{-4}\) is a weighting factor balancing the contribution of perceptual features. This formulation encourages the network to preserve both numerical accuracy and high-level structural information, leading to visually sharper reconstructions.
 
-\paragraph{Experimental Motivation}
+\textbf{MSFSSR with Pixel-Wise Loss Only}  
+This variant was trained exclusively using the \(\ell_1\) reconstruction loss:
 
-By keeping all training parameters identical except for the loss formulation,
-these two handcrafted models enable a controlled comparison that highlights the
-specific contribution of perceptual loss to super-resolution performance. This
-design choice provides valuable insights into the trade-off between pixel-wise
-accuracy and perceptual quality in custom deep learning architectures.
+\[
+\mathcal{L}_{\ell_1} = \frac{1}{N} \sum_{i=1}^{N} |\hat{y}_i - y_i|,
+\]
 
+serving as a baseline to evaluate the effect of perceptual supervision. By relying solely on pixel-level discrepancies, this model prioritizes numerical fidelity but may produce smoother textures compared to the perceptually supervised variant.
 
+\subsubsection{Experimental Motivation}
+
+By keeping all architectural and training parameters identical except for the loss formulation, these two MSFSSR variants enable a controlled ablation study. This design isolates the specific contribution of perceptual loss to super-resolution performance and provides insights into the trade-off between pixel-wise accuracy and perceptual quality in frequency-aware, multi-scale architectures.
 \subsection{Training Analysis}
 
 
@@ -879,11 +840,33 @@ In the left subplot, all methods exhibit a rapid decrease in loss during the ini
 The right subplot reports the corresponding PSNR evolution. A consistent improvement is observed for all models, with most gains occurring early in training and gradual saturation afterward. EDSR obtains the highest validation PSNR, approaching approximately $28.2$~dB, while SRResNet converges around $28.0$~dB, and SRCNN remains notably lower near $27.1$--$27.2$~dB. These results confirm that the deeper residual-based architectures (EDSR and SRResNet) significantly outperform the SRCNN baseline in reconstruction fidelity.
 
 Overall, the close relationship between training and validation curves suggests good generalization without severe overfitting. The comparative trends indicate that EDSR provides the best performance among the tested models, achieving both lower validation loss and higher validation PSNR in this experimental setting.
+\newline
+\section{Conclusion}
+Based on the comprehensive investigation presented in this study, the application of single image super-resolution (SISR) techniques to satellite imagery has been thoroughly explored through a series of progressively sophisticated deep learning models. Beginning with the foundational SRCNN, and advancing through the enhanced residual architectures of SRResNet and EDSR, we observed a clear trajectory of improvement in pixel-wise reconstruction fidelity, as quantitatively validated by metrics such as PSNR and SSIM. The pursuit of perceptual realism was further addressed by the adversarial framework of ESRGAN, which demonstrated the capacity to generate visually compelling textures, albeit at a known trade-off with strict numerical accuracy.
 
-\section{Bibliographie}
+Within this landscape, our primary contribution is the introduction of the \textbf{Multi-Scale and Frequency-Separated Super-Resolution (MSFSSR)} network. This novel architecture is designed to reconcile the competing demands of high reconstruction fidelity and perceptually coherent detail, specifically tailored for the critical domain of satellite remote sensing. By integrating multi-scale residual blocks (MSRB) to capture diverse spatial contexts and explicitly decomposing the feature learning process into parallel low-frequency and high-frequency pathways, MSFSSR achieves a principled separation of structural and textural information. The incorporation of a fixed Laplacian filter as an inductive prior for high-frequency feature extraction further stabilizes training and enhances edge-aware reconstruction, all without reliance on adversarial optimization.
+
+Our experimental analysis confirms that MSFSSR, particularly when trained with a combined perceptual and pixel-wise loss, effectively balances quantitative accuracy and perceptual quality. It maintains competitive performance in traditional metrics while avoiding the instability and hallucination risks associated with generative adversarial approaches. This work therefore establishes MSFSSR as a robust and efficient alternative for satellite image super-resolution, offering a reliable pathway for enhancing spatial detail in Earth observation data where geographical fidelity and structural authenticity are paramount.
+
+Future work may focus on extending this frequency-aware paradigm to higher magnification factors, integrating multispectral or temporal dimensions, and optimizing the architecture for real-time deployment in operational satellite data processing pipelines.
+\newpage
 % \addcontentsline{toc}{section}{Bibliographie}
 \begin{thebibliography}{99}
 
+\bibitem{patch}
+S. Ullah and S. Song,
+\textit{SRResNet Performance Enhancement Using Patch Inputs and Partial Convolution-Based Padding},
+Comput. Mater. Contin., 2023.
+
+\bibitem{SSIM}
+Z. Wang, A. C. Bovik, H. R. Sheikh, and E. P. Simoncelli,
+\textit{Image quality assessment: from error visibility to structural similarity},
+IEEE Trans. Image Process., vol. 13, no. 4, pp. 600-612, 2004.
+
+\bibitem{LPIPS}
+R. Zhang, P. Isola, A. A. Efros, E. Shechtman, and O. Wang,
+\textit{The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+CVPR, 2018.
 
 \bibitem{SRCNN}
 C. Dong, C. C. Loy, K. He, and X. Tang,
@@ -894,6 +877,12 @@ IEEE TPAMI, 2016.
 C. Ledig et al.,
 \textit{Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
 CVPR, 2017.
+
+\bibitem{SubPixel}
+W. Shi, J. Caballero, F. Huszár, J. Totz, A. P. Aitken, R. Bishop, D. Rueckert, and Z. Wang,
+\textit{Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network},
+CVPR, 2016.
+
 
 \bibitem{ESRGAN}
 X. Wang et al.,
@@ -925,6 +914,24 @@ G. Huang et al.,
 \textit{Densely Connected Convolutional Networks},
 CVPR, 2017.
 
+\bibitem{MSRB}
+J. Li, F. Fang, K. Mei, and G. Zhang,
+\textit{Multi-scale Residual Network for Image Super-Resolution},
+ECCV, 2018.
+
+\bibitem{Laplacian}
+D. Marr and E. Hildreth,
+\textit{Theory of Edge Detection},
+Proceedings of the Royal Society of London. Series B, Biological Sciences, vol. 207, no. 1167, pp. 187-217, 1980.
+
+\bibitem{PerceptualLoss}
+J. Johnson, A. Alahi, and L. Fei-Fei,
+\textit{Perceptual Losses for Real-Time Style Transfer and Super-Resolution},
+ECCV, 2016.
+\bibitem{VGG}
+K. Simonyan and A. Zisserman,
+\textit{Very Deep Convolutional Networks for Large-Scale Image Recognition},
+ICLR, 2015.
 \bibitem{Adam}
 D. Kingma and J. Ba,
 \textit{Adam: A Method for Stochastic Optimization},
@@ -934,12 +941,11 @@ ICLR, 2015.
 A. Paszke et al.,
 \textit{PyTorch: An Imperative Style, High-Performance Deep Learning Library},
 NeurIPS, 2019. \\
-\textcolor{blue}{\url{https://pytorch.org}}
+\textcolor{black}{\url{https://pytorch.org}}
 
 \bibitem{Kaggle}
-Kaggle Datasets. \\
-\textcolor{blue}{\url{https://www.kaggle.com/datasets}}
-
+Kaggle 4x Satellite Image Super-Resolution Datasets. \\
+\textcolor{black}{\url{https://www.kaggle.com/datasets/cristobaltudela/4x-satellite-image-super-resolution}}
 
 
 \end{thebibliography}
