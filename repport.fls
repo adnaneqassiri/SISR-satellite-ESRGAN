@@ -1,9 +1,9 @@
-PWD /home/adnane/Desktop/satellite-yasser-run/Satellite_Super_Resulotion0/rapport
+PWD /home/yasser/classes/DL26/report/SISR-satellite-ESRGAN
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/adnane/Desktop/satellite-yasser-run/Satellite_Super_Resulotion0/rapport/repport.tex
+INPUT /home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex
 OUTPUT repport.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls

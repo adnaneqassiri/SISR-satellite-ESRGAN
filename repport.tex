@@ -170,7 +170,7 @@ Specifically, we extract paired low-resolution (LR) and high-resolution (HR) pat
     \centering
     \includegraphics[width=1\textwidth]{Samples/image patche extraction.png}
     \caption{Data Samples After Patching}
-    \label{fig:faster_rcnn}
+    \label{fig:patch_extraction}
    \end{figure}
 
 
@@ -183,8 +183,8 @@ The use of patch-based training provides several important advantages: it signif
   \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Samples/samples_viz.png}
-    \caption{Data Samples After Patching}
-    \label{fig:faster_rcnn}
+    \caption{Data Samples Visualization}
+    \label{fig:samples_visualization}
    \end{figure}
 \subsection{Evaluation Metrics}
 
@@ -480,7 +480,7 @@ During \textbf{adversarial training}, the discriminator learns to improve its \t
     \centering
     \includegraphics[width=0.8\textwidth]{Architectures/GAN-architecture.png}
     \caption{Architecture of GANs}
-    \label{fig:faster_rcnn}
+    \label{fig:gan_architecture}
    \end{figure}
 \subsubsection{Adversarial Loss in ESRGAN}
 To improve perceptual realism, ESRGAN adopts an adversarial loss based on the \textbf{Relativistic Average GAN (RaGAN) (cite)} framework. Unlike standard GANs, where the discriminator predicts the probability of an image being real or fake independently, RaGAN estimates the probability that a real image appears more realistic than a generated one.
@@ -880,5 +880,68 @@ The right subplot reports the corresponding PSNR evolution. A consistent improve
 
 Overall, the close relationship between training and validation curves suggests good generalization without severe overfitting. The comparative trends indicate that EDSR provides the best performance among the tested models, achieving both lower validation loss and higher validation PSNR in this experimental setting.
 
+\section{Bibliographie}
+% \addcontentsline{toc}{section}{Bibliographie}
+\begin{thebibliography}{99}
+
+
+\bibitem{SRCNN}
+C. Dong, C. C. Loy, K. He, and X. Tang,
+\textit{Image Super-Resolution Using Deep Convolutional Networks},
+IEEE TPAMI, 2016.
+
+\bibitem{SRGAN}
+C. Ledig et al.,
+\textit{Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
+CVPR, 2017.
+
+\bibitem{ESRGAN}
+X. Wang et al.,
+\textit{ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks},
+ECCV Workshops, 2018.
+
+\bibitem{EDSR}
+B. Lim et al.,
+\textit{Enhanced Deep Residual Networks for Single Image Super-Resolution},
+CVPR Workshops, 2017.
+
+\bibitem{PerceptualLoss}
+J. Johnson, A. Alahi, and L. Fei-Fei,
+\textit{Perceptual Losses for Real-Time Style Transfer and Super-Resolution},
+ECCV, 2016.
+
+\bibitem{RAGAN}
+A. Jolicoeur-Martineau,
+\textit{Relativistic Generative Adversarial Networks},
+ICLR, 2019.
+
+\bibitem{ResNet}
+K. He et al.,
+\textit{Deep Residual Learning for Image Recognition},
+CVPR, 2016.
+
+\bibitem{DenseNet}
+G. Huang et al.,
+\textit{Densely Connected Convolutional Networks},
+CVPR, 2017.
+
+\bibitem{Adam}
+D. Kingma and J. Ba,
+\textit{Adam: A Method for Stochastic Optimization},
+ICLR, 2015.
+
+\bibitem{PyTorch}
+A. Paszke et al.,
+\textit{PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+NeurIPS, 2019. \\
+\textcolor{blue}{\url{https://pytorch.org}}
+
+\bibitem{Kaggle}
+Kaggle Datasets. \\
+\textcolor{blue}{\url{https://www.kaggle.com/datasets}}
+
+
+
+\end{thebibliography}
 
 \end{document}
