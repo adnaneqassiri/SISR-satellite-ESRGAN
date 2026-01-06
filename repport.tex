@@ -841,6 +841,35 @@ The right subplot reports the corresponding PSNR evolution. A consistent improve
 
 Overall, the close relationship between training and validation curves suggests good generalization without severe overfitting. The comparative trends indicate that EDSR provides the best performance among the tested models, achieving both lower validation loss and higher validation PSNR in this experimental setting.
 \newline
+
+
+
+\section{Infrence and Comparision}
+\subsection{Models Comparision}
+\subsection{Samples Visualisation}
+A real-world satellite image of size approximately 3000×3000 pixels was processed using a patch-based inference strategy. The original low-resolution image was partitioned into smaller patches, which were individually fed into the super-resolution model due to GPU memory limitations. Each patch was super-resolved independently, and the outputs were subsequently merged according to their spatial coordinates to reconstruct the full super-resolved image. This approach allows scalable inference on high-resolution imagery while maintaining the fidelity of the reconstructed spatial structure.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Samples/LR_zoom_plot.png}
+    \caption{Low-resolution (LR) input images serving as the baseline for super-resolution reconstruction.}
+    \label{fig:lr}
+\end{figure}
+The low-resolution input image serves as the baseline for super-resolution. Due to limited spatial information, fine details such as edges, textures, and small structures are blurred or missing. This representation highlights the challenges faced by super-resolution models when reconstructing high-frequency details.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Samples/SR_zoom_plot.png}
+    \caption{Super-resolved images produced by the ESRGAN model from low-resolution inputs.}
+    \label{fig:sr}
+\end{figure}
+The ESRGAN model produces visually sharper and more detailed results by leveraging adversarial training and perceptual loss. Compared to other methods, the image exhibits enhanced textures, stronger edge definition, and improved visual realism, closely resembling the high-resolution ground truth.   
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Samples/HR_zoom_plot.png}
+    \caption{High-resolution (HR) ground truth images used for comparison with super-resolved outputs.}
+    \label{fig:hr}
+\end{figure}
+The high-resolution ground truth image represents the reference target for super-resolution evaluation. It contains the complete spatial details and textures that models aim to reconstruct, serving as the benchmark for both quantitative metrics (PSNR, SSIM) and visual comparison.
+
 \section{Conclusion}
 Based on the comprehensive investigation presented in this study, the application of single image super-resolution (SISR) techniques to satellite imagery has been thoroughly explored through a series of progressively sophisticated deep learning models. Beginning with the foundational SRCNN, and advancing through the enhanced residual architectures of SRResNet and EDSR, we observed a clear trajectory of improvement in pixel-wise reconstruction fidelity, as quantitatively validated by metrics such as PSNR and SSIM. The pursuit of perceptual realism was further addressed by the adversarial framework of ESRGAN, which demonstrated the capacity to generate visually compelling textures, albeit at a known trade-off with strict numerical accuracy.
 
@@ -849,6 +878,11 @@ Within this landscape, our primary contribution is the introduction of the \text
 Our experimental analysis confirms that MSFSSR, particularly when trained with a combined perceptual and pixel-wise loss, effectively balances quantitative accuracy and perceptual quality. It maintains competitive performance in traditional metrics while avoiding the instability and hallucination risks associated with generative adversarial approaches. This work therefore establishes MSFSSR as a robust and efficient alternative for satellite image super-resolution, offering a reliable pathway for enhancing spatial detail in Earth observation data where geographical fidelity and structural authenticity are paramount.
 
 Future work may focus on extending this frequency-aware paradigm to higher magnification factors, integrating multispectral or temporal dimensions, and optimizing the architecture for real-time deployment in operational satellite data processing pipelines.
+
+
+
+
+
 \newpage
 % \addcontentsline{toc}{section}{Bibliographie}
 \begin{thebibliography}{99}
