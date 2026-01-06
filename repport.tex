@@ -14,6 +14,7 @@
 \usepackage{array}
 \usepackage{caption}
 
+\usepackage{subcaption}
 
 \usepackage{amssymb} % fournit \mathbb
 % ou \usepackage{amsfonts}
@@ -852,8 +853,60 @@ this figure presents the training and validation performance of the proposed Mul
 Both models exhibit stable convergence, as reflected by the smooth decrease in L1 loss and the consistent increase in PSNR across epochs. The MSFSSR\_L1 model achieves lower validation loss and higher PSNR values, indicating superior pixel-level reconstruction accuracy.
 In contrast, MSFSSR\_CUSTOM shows slightly higher loss and marginally lower PSNR, which is expected due to the incorporation of perceptual constraints that prioritize high-level structural and semantic features over strict pixel-wise fidelity. Importantly, the close alignment between training and validation curves for both models demonstrates strong generalization and the absence of overfitting.
 Overall, these results highlight the trade-off between quantitative fidelity and perceptual quality, confirming the effectiveness of the MSFSSR architecture under both optimization strategies.
+
+
+
+
+
 \section{Infrence and Comparision}
 \subsection{Models Comparision}
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/LR.png}
+        
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/SRCNN.png}
+        
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/SRRESNET.png}
+        
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/EDSR.png}
+        
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/ESRGAN-5pics.png}
+        
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/MSFSSR_L1.png}
+    
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/MSFSSR_CUSTOM.png}
+        
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.11\textwidth}
+        \includegraphics[width=\linewidth]{test_samples/HR.png}
+        
+    \end{subfigure}
+    \caption{Visual comparison between low-resolution input, super-resolved images produced by different models, and the high-resolution ground truth.}
+    \label{fig:sr_models_comparison}
+\end{figure}
+
 \subsection{Samples Visualisation}
 A real-world satellite image of size approximately 3000×3000 pixels was processed using a patch-based inference strategy. The original low-resolution image was partitioned into smaller patches, which were individually fed into the super-resolution model due to GPU memory limitations. Each patch was super-resolved independently, and the outputs were subsequently merged according to their spatial coordinates to reconstruct the full super-resolved image. This approach allows scalable inference on high-resolution imagery while maintaining the fidelity of the reconstructed spatial structure.
 \begin{figure}[H]

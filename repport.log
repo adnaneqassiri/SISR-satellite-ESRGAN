@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.26)  6 JAN 2026 01:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.15)  6 JAN 2026 01:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex
-(/home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex
+**"/home/adnane/Desktop/rapport dl/repport.tex"
+(/home/adnane/Desktop/rapport dl/repport.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -34,9 +34,9 @@ Package: babel 2024/01/07 v24.1 The Babel package
  (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language59). Reported on input line 91.
+(babel)             (\language33). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language59). Reported on input line 92.
+(babel)             (\language33). Reported on input line 92.
 \FB@stdchar=\count197
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -342,6 +342,12 @@ Package caption Info: french babel package is loaded.
 \c@caption@flags=\count321
 \c@continuedfloat=\count322
 Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count323
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count324
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -356,9 +362,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count323
-\Gm@cntv=\count324
-\c@Gm@tempcnt=\count325
+\Gm@cnth=\count325
+\Gm@cntv=\count326
+\c@Gm@tempcnt=\count327
 \Gm@bindingoffset=\dimen187
 \Gm@wd@mp=\dimen188
 \Gm@odd@mp=\dimen189
@@ -372,7 +378,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count326
+\c@float@type=\count328
 \float@exts=\toks30
 \float@box=\box55
 \@float@everytoks=\toks31
@@ -420,14 +426,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen264
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count327
-\c@pgf@countb=\count328
-\c@pgf@countc=\count329
-\c@pgf@countd=\count330
+\c@pgf@counta=\count329
+\c@pgf@countb=\count330
+\c@pgf@countc=\count331
+\c@pgf@countd=\count332
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count331
+\pgf@sys@id@count=\count333
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -438,21 +444,21 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count332
-\pgfsyssoftpath@bigbuffer@items=\count333
+\pgfsyssoftpath@smallbuffer@items=\count334
+\pgfsyssoftpath@bigbuffer@items=\count335
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen265
-\pgfmath@count=\count334
+\pgfmath@count=\count336
 \pgfmath@box=\box58
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count335
+\c@pgfmathroundto@lastzeros=\count337
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen266
@@ -482,7 +488,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count336
+\pgf@picture@serial@count=\count338
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen284
@@ -503,8 +509,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen289
-\pgf@sys@shading@range@num=\count337
-\pgf@shadingcount=\count338
+\pgf@sys@shading@range@num=\count339
+\pgf@shadingcount=\count340
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -539,7 +545,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count339
+\pgf@plot@mark@count=\count341
 \pgfplotmarksize=\dimen294
 )
 \tikz@lastx=\dimen295
@@ -554,46 +560,46 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count340
-\tikznumberofchildren=\count341
-\tikznumberofcurrentchild=\count342
-\tikz@fig@count=\count343
+\tikztreelevel=\count342
+\tikznumberofchildren=\count343
+\tikznumberofcurrentchild=\count344
+\tikz@fig@count=\count345
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count344
-\pgfmatrixcurrentcolumn=\count345
-\pgf@matrix@numberofcolumns=\count346
+\pgfmatrixcurrentrow=\count346
+\pgfmatrixcurrentcolumn=\count347
+\pgf@matrix@numberofcolumns=\count348
 )
-\tikz@expandcount=\count347
+\tikz@expandcount=\count349
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tikzpagenodes/tikzpagenodes.sty
 Package: tikzpagenodes 2012/09/16 v1.1 Special PGF/TikZ nodes for areas of the page
  (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count348
+\c@checkoddpage=\count350
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTleft=\skip59
 \LTright=\skip60
 \LTpre=\skip61
 \LTpost=\skip62
-\LTchunksize=\count349
+\LTchunksize=\count351
 \LTcapwidth=\dimen303
 \LT@head=\box68
 \LT@firsthead=\box69
 \LT@foot=\box70
 \LT@lastfoot=\box71
 \LT@gbox=\box72
-\LT@cols=\count350
-\LT@rows=\count351
-\c@LT@tables=\count352
-\c@LT@chunks=\count353
+\LT@cols=\count352
+\LT@rows=\count353
+\c@LT@tables=\count354
+\c@LT@chunks=\count355
 \LT@p@ftn=\toks44
 ) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip63
-\multirow@cntb=\count354
+\multirow@cntb=\count356
 \multirow@dima=\skip64
 \bigstrutjot=\dimen304
 ) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
@@ -601,24 +607,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count355
-\c@Blindtext=\count356
-\c@blind@countparstart=\count357
-\blind@countxx=\count358
-\blindtext@numBlindtext=\count359
-\blind@countyy=\count360
-\c@blindlist=\count361
-\c@blindlistlevel=\count362
-\c@blindlist@level=\count363
-\blind@listitem=\count364
-\c@blind@listcount=\count365
-\c@blind@levelcount=\count366
-\blind@mathformula=\count367
-\blind@Mathformula=\count368
-\c@blind@randomcount=\count369
-\c@blind@randommax=\count370
-\c@blind@pangramcount=\count371
-\c@blind@pangrammax=\count372
+\c@blindtext=\count357
+\c@Blindtext=\count358
+\c@blind@countparstart=\count359
+\blind@countxx=\count360
+\blindtext@numBlindtext=\count361
+\blind@countyy=\count362
+\c@blindlist=\count363
+\c@blindlistlevel=\count364
+\c@blindlist@level=\count365
+\blind@listitem=\count366
+\c@blind@listcount=\count367
+\c@blind@levelcount=\count368
+\blind@mathformula=\count369
+\blind@Mathformula=\count370
+\c@blind@randomcount=\count371
+\c@blind@randommax=\count372
+\c@blind@pangramcount=\count373
+\c@blind@pangrammax=\count374
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen305
@@ -626,16 +632,16 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen307
 \TX@target=\dimen308
 \TX@delta=\dimen309
-\TX@cols=\count373
+\TX@cols=\count375
 \TX@ftn=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks46
 \minrowclearance=\skip65
-\rownum=\count374
+\rownum=\count376
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count375
+\l__color_backend_stack_int=\count377
 \l__pdf_internal_box=\box73
 ) (./repport.aux
 
@@ -644,38 +650,38 @@ LaTeX Warning: Label `PerceptualLoss' multiply defined.
 )
 \openout1 = `repport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Info: Redefining \degres on input line 71.
-LaTeX Info: Redefining \up on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Info: Redefining \degres on input line 72.
+LaTeX Info: Redefining \up on input line 72.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count376
+\scratchcounter=\count378
 \scratchdimen=\dimen310
 \scratchbox=\box74
-\nofMPsegments=\count377
-\nofMParguments=\count378
+\nofMPsegments=\count379
+\nofMParguments=\count380
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count379
+\MPscratchCnt=\count381
 \MPscratchDim=\dimen311
-\MPnumerator=\count380
-\makeMPintoPDFobject=\count381
+\MPnumerator=\count382
+\makeMPintoPDFobject=\count383
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -683,7 +689,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 71.
+Package hyperref Info: Link coloring OFF on input line 72.
  (./repport.out) (./repport.out)
 \@outlinefile=\write4
 \openout4 = `repport.out'.
@@ -733,13 +739,13 @@ Package caption Info: End \AtBeginDocument code.
 <logos/Logo-ENSA.png, id=203, 3011.25pt x 1126.2075pt>
 File: logos/Logo-ENSA.png Graphic file (type png)
 <use logos/Logo-ENSA.png>
-Package pdftex.def Info: logos/Logo-ENSA.png  used on input line 76.
+Package pdftex.def Info: logos/Logo-ENSA.png  used on input line 77.
 (pdftex.def)             Requested size: 455.24411pt x 170.24704pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -754,40 +760,40 @@ l.39 ...parated Learning}{17}{subsubsection.3.5.3}
 \openout5 = `repport.toc'.
 
  [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 145.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 146.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 <Samples/image patche extraction.png, id=289, 2300.595pt x 970.62625pt>
 File: Samples/image patche extraction.png Graphic file (type png)
 <use Samples/image patche extraction.png>
-Package pdftex.def Info: Samples/image patche extraction.png  used on input line 171.
+Package pdftex.def Info: Samples/image patche extraction.png  used on input line 172.
 (pdftex.def)             Requested size: 455.24411pt x 192.06314pt.
  [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 <Samples/samples_viz.png, id=298, 1237.2624pt x 491.9178pt>
 File: Samples/samples_viz.png Graphic file (type png)
 <use Samples/samples_viz.png>
-Package pdftex.def Info: Samples/samples_viz.png  used on input line 185.
+Package pdftex.def Info: Samples/samples_viz.png  used on input line 186.
 (pdftex.def)             Requested size: 455.24411pt x 180.99341pt.
  [5 <./Samples/image patche extraction.png> <./Samples/samples_viz.png>] [6]
 <Architectures/SRCNN.png, id=319, 1227.58624pt x 422.57875pt>
 File: Architectures/SRCNN.png Graphic file (type png)
 <use Architectures/SRCNN.png>
-Package pdftex.def Info: Architectures/SRCNN.png  used on input line 269.
+Package pdftex.def Info: Architectures/SRCNN.png  used on input line 270.
 (pdftex.def)             Requested size: 455.24411pt x 156.71277pt.
  [7] [8 <./Architectures/SRCNN.png>]
 <Architectures/residual_block.png, id=340, 798.985pt x 338.26375pt>
 File: Architectures/residual_block.png Graphic file (type png)
 <use Architectures/residual_block.png>
-Package pdftex.def Info: Architectures/residual_block.png  used on input line 343.
+Package pdftex.def Info: Architectures/residual_block.png  used on input line 344.
 (pdftex.def)             Requested size: 364.19667pt x 154.18895pt.
 <Architectures/sub-pixel.png, id=342, 1384.17125pt x 583.17876pt>
 File: Architectures/sub-pixel.png Graphic file (type png)
 <use Architectures/sub-pixel.png>
-Package pdftex.def Info: Architectures/sub-pixel.png  used on input line 352.
+Package pdftex.def Info: Architectures/sub-pixel.png  used on input line 353.
 (pdftex.def)             Requested size: 500.77129pt x 210.98532pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 352--353
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 353--354
  [][] 
  []
 
@@ -795,125 +801,166 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 352--353
 <Architectures/srresnet-architecture.png, id=351, 3323.41624pt x 2125.9425pt>
 File: Architectures/srresnet-architecture.png Graphic file (type png)
 <use Architectures/srresnet-architecture.png>
-Package pdftex.def Info: Architectures/srresnet-architecture.png  used on input line 362.
+Package pdftex.def Info: Architectures/srresnet-architecture.png  used on input line 363.
 (pdftex.def)             Requested size: 455.24411pt x 291.20695pt.
  [10 <./Architectures/sub-pixel.png (PNG copy)>] [11 <./Architectures/srresnet-architecture.png (PNG copy)>]
 <Architectures/Residual_Block.png, id=366, 518.93875pt x 573.14125pt>
 File: Architectures/Residual_Block.png Graphic file (type png)
 <use Architectures/Residual_Block.png>
-Package pdftex.def Info: Architectures/Residual_Block.png  used on input line 409.
+Package pdftex.def Info: Architectures/Residual_Block.png  used on input line 410.
 (pdftex.def)             Requested size: 227.62206pt x 251.39584pt.
 <Architectures/edsr_architecture.png, id=367, 711.65875pt x 436.63126pt>
 File: Architectures/edsr_architecture.png Graphic file (type png)
 <use Architectures/edsr_architecture.png>
-Package pdftex.def Info: Architectures/edsr_architecture.png  used on input line 447.
+Package pdftex.def Info: Architectures/edsr_architecture.png  used on input line 448.
 (pdftex.def)             Requested size: 318.66948pt x 195.51619pt.
  [12 <./Architectures/Residual_Block.png>]
 <Architectures/GAN-architecture.png, id=377, 1446.40375pt x 649.42625pt>
 File: Architectures/GAN-architecture.png Graphic file (type png)
 <use Architectures/GAN-architecture.png>
-Package pdftex.def Info: Architectures/GAN-architecture.png  used on input line 477.
+Package pdftex.def Info: Architectures/GAN-architecture.png  used on input line 478.
 (pdftex.def)             Requested size: 364.19667pt x 163.51556pt.
  [13 <./Architectures/edsr_architecture.png>] [14 <./Architectures/GAN-architecture.png>]
 <Architectures/Gen_archi.png, id=397, 1378.14874pt x 334.24875pt>
 File: Architectures/Gen_archi.png Graphic file (type png)
 <use Architectures/Gen_archi.png>
-Package pdftex.def Info: Architectures/Gen_archi.png  used on input line 521.
+Package pdftex.def Info: Architectures/Gen_archi.png  used on input line 522.
 (pdftex.def)             Requested size: 455.24411pt x 110.40953pt.
 <Architectures/RRDB-archi.png, id=398, 1464.47125pt x 360.34625pt>
 File: Architectures/RRDB-archi.png Graphic file (type png)
 <use Architectures/RRDB-archi.png>
-Package pdftex.def Info: Architectures/RRDB-archi.png  used on input line 531.
+Package pdftex.def Info: Architectures/RRDB-archi.png  used on input line 532.
 (pdftex.def)             Requested size: 455.24411pt x 112.01408pt.
 <Architectures/Disc_diagram-Page-1.drawio (3).png, id=399, 1289.81876pt x 325.215pt>
 File: Architectures/Disc_diagram-Page-1.drawio (3).png Graphic file (type png)
 <use Architectures/Disc_diagram-Page-1.drawio (3).png>
-Package pdftex.def Info: Architectures/Disc_diagram-Page-1.drawio (3).png  used on input line 541.
+Package pdftex.def Info: Architectures/Disc_diagram-Page-1.drawio (3).png  used on input line 542.
 (pdftex.def)             Requested size: 455.24411pt x 114.78468pt.
  [15 <./Architectures/Gen_archi.png> <./Architectures/RRDB-archi.png>]
-Overfull \hbox (35.52423pt too wide) in paragraph at lines 548--548
+Overfull \hbox (35.52423pt too wide) in paragraph at lines 549--549
 []\T1/cmr/bx/n/14.4 MSFSSR : Multi-Scale and Frequency-Separated Super-Resolution
  []
 
 <Architectures/MSRB.jpeg, id=414, 1166.3575pt x 426.59375pt>
 File: Architectures/MSRB.jpeg Graphic file (type jpg)
 <use Architectures/MSRB.jpeg>
-Package pdftex.def Info: Architectures/MSRB.jpeg  used on input line 563.
+Package pdftex.def Info: Architectures/MSRB.jpeg  used on input line 564.
 (pdftex.def)             Requested size: 364.19667pt x 133.19955pt.
 [16 <./Architectures/Disc_diagram-Page-1.drawio (3).png>]
 <Architectures/laplacianfilter.jpeg, id=423, 843.15pt x 391.4625pt>
 File: Architectures/laplacianfilter.jpeg Graphic file (type jpg)
 <use Architectures/laplacianfilter.jpeg>
-Package pdftex.def Info: Architectures/laplacianfilter.jpeg  used on input line 588.
+Package pdftex.def Info: Architectures/laplacianfilter.jpeg  used on input line 589.
 (pdftex.def)             Requested size: 364.19667pt x 169.09016pt.
  [17 <./Architectures/MSRB.jpeg>]
 <Architectures/MSFSSR.jpeg, id=433, 1606.0pt x 596.2275pt>
 File: Architectures/MSFSSR.jpeg Graphic file (type jpg)
 <use Architectures/MSFSSR.jpeg>
-Package pdftex.def Info: Architectures/MSFSSR.jpeg  used on input line 609.
+Package pdftex.def Info: Architectures/MSFSSR.jpeg  used on input line 610.
 (pdftex.def)             Requested size: 455.24411pt x 169.00774pt.
  [18 <./Architectures/laplacianfilter.jpeg>]
 <Architectures/content_loss.png, id=442, 2209.25375pt x 799.98875pt>
 File: Architectures/content_loss.png Graphic file (type png)
 <use Architectures/content_loss.png>
-Package pdftex.def Info: Architectures/content_loss.png  used on input line 641.
+Package pdftex.def Info: Architectures/content_loss.png  used on input line 642.
 (pdftex.def)             Requested size: 409.71692pt x 148.3618pt.
  [19 <./Architectures/MSFSSR.jpeg>] [20 <./Architectures/content_loss.png>] [21] [22]
 <plots/stage-1.png, id=484, 875.1897pt x 379.4175pt>
 File: plots/stage-1.png Graphic file (type png)
 <use plots/stage-1.png>
-Package pdftex.def Info: plots/stage-1.png  used on input line 791.
+Package pdftex.def Info: plots/stage-1.png  used on input line 792.
 (pdftex.def)             Requested size: 409.71692pt x 177.61993pt.
  [23]
 <plots/stage-2.png, id=490, 875.1897pt x 390.258pt>
 File: plots/stage-2.png Graphic file (type png)
 <use plots/stage-2.png>
-Package pdftex.def Info: plots/stage-2.png  used on input line 812.
+Package pdftex.def Info: plots/stage-2.png  used on input line 813.
 (pdftex.def)             Requested size: 455.24411pt x 202.99487pt.
  [24 <./plots/stage-1.png>]
 <plots/val_and_train_comparaison.png, id=499, 1395.2125pt x 592.2125pt>
 File: plots/val_and_train_comparaison.png Graphic file (type png)
 <use plots/val_and_train_comparaison.png>
-Package pdftex.def Info: plots/val_and_train_comparaison.png  used on input line 831.
+Package pdftex.def Info: plots/val_and_train_comparaison.png  used on input line 832.
 (pdftex.def)             Requested size: 455.24411pt x 193.23486pt.
  [25 <./plots/stage-2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 842--844
+Underfull \hbox (badness 10000) in paragraph at lines 843--845
 
  []
 
 <plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png, id=507, 1004.553pt x 425.1885pt>
 File: plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png Graphic file (type png)
 <use plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png>
-Package pdftex.def Info: plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png  used on input line 847.
+Package pdftex.def Info: plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png  used on input line 848.
 (pdftex.def)             Requested size: 455.24411pt x 192.68901pt.
 [26 <./plots/val_and_train_comparaison.png (PNG copy)>]
-<Samples/LR_zoom_plot.png, id=513, 508.7808pt x 252.2223pt>
+<test_samples/LR.png, id=513, 151.0443pt x 853.5087pt>
+File: test_samples/LR.png Graphic file (type png)
+<use test_samples/LR.png>
+Package pdftex.def Info: test_samples/LR.png  used on input line 868.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+<test_samples/SRCNN.png, id=514, 151.0443pt x 853.5087pt>
+File: test_samples/SRCNN.png Graphic file (type png)
+<use test_samples/SRCNN.png>
+Package pdftex.def Info: test_samples/SRCNN.png  used on input line 873.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+<test_samples/SRRESNET.png, id=515, 153.2124pt x 853.5087pt>
+File: test_samples/SRRESNET.png Graphic file (type png)
+<use test_samples/SRRESNET.png>
+Package pdftex.def Info: test_samples/SRRESNET.png  used on input line 878.
+(pdftex.def)             Requested size: 50.07712pt x 278.96288pt.
+<test_samples/EDSR.png, id=516, 151.0443pt x 853.5087pt>
+File: test_samples/EDSR.png Graphic file (type png)
+<use test_samples/EDSR.png>
+Package pdftex.def Info: test_samples/EDSR.png  used on input line 883.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+<test_samples/ESRGAN-5pics.png, id=517, 151.0443pt x 853.5087pt>
+File: test_samples/ESRGAN-5pics.png Graphic file (type png)
+<use test_samples/ESRGAN-5pics.png>
+Package pdftex.def Info: test_samples/ESRGAN-5pics.png  used on input line 888.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+<test_samples/MSFSSR_L1.png, id=518, 151.0443pt x 853.5087pt>
+File: test_samples/MSFSSR_L1.png Graphic file (type png)
+<use test_samples/MSFSSR_L1.png>
+Package pdftex.def Info: test_samples/MSFSSR_L1.png  used on input line 893.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+<test_samples/MSFSSR_CUSTOM.png, id=519, 151.0443pt x 853.5087pt>
+File: test_samples/MSFSSR_CUSTOM.png Graphic file (type png)
+<use test_samples/MSFSSR_CUSTOM.png>
+Package pdftex.def Info: test_samples/MSFSSR_CUSTOM.png  used on input line 898.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+<test_samples/HR.png, id=520, 151.0443pt x 853.5087pt>
+File: test_samples/HR.png Graphic file (type png)
+<use test_samples/HR.png>
+Package pdftex.def Info: test_samples/HR.png  used on input line 903.
+(pdftex.def)             Requested size: 50.07712pt x 282.96109pt.
+ [27 <./plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png>]
+<Samples/LR_zoom_plot.png, id=527, 508.7808pt x 252.2223pt>
 File: Samples/LR_zoom_plot.png Graphic file (type png)
 <use Samples/LR_zoom_plot.png>
-Package pdftex.def Info: Samples/LR_zoom_plot.png  used on input line 861.
+Package pdftex.def Info: Samples/LR_zoom_plot.png  used on input line 914.
 (pdftex.def)             Requested size: 364.19667pt x 180.55309pt.
- [27 <./plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png>]
-<Samples/SR_zoom_plot.png, id=520, 509.14215pt x 252.2223pt>
+ [28 <./test_samples/LR.png> <./test_samples/SRCNN.png> <./test_samples/SRRESNET.png> <./test_samples/EDSR.png> <./test_samples/ESRGAN-5pics.png> <./test_samples/MSFSSR_L1.png> <./test_samples/MSFSSR_CUSTOM.png> <./test_samples/HR.png>]
+<Samples/SR_zoom_plot.png, id=541, 509.14215pt x 252.2223pt>
 File: Samples/SR_zoom_plot.png Graphic file (type png)
 <use Samples/SR_zoom_plot.png>
-Package pdftex.def Info: Samples/SR_zoom_plot.png  used on input line 868.
+Package pdftex.def Info: Samples/SR_zoom_plot.png  used on input line 921.
 (pdftex.def)             Requested size: 364.19667pt x 180.42224pt.
-<Samples/HR_zoom_plot.png, id=521, 509.14215pt x 252.2223pt>
+<Samples/HR_zoom_plot.png, id=542, 509.14215pt x 252.2223pt>
 File: Samples/HR_zoom_plot.png Graphic file (type png)
 <use Samples/HR_zoom_plot.png>
-Package pdftex.def Info: Samples/HR_zoom_plot.png  used on input line 875.
+Package pdftex.def Info: Samples/HR_zoom_plot.png  used on input line 928.
 (pdftex.def)             Requested size: 364.19667pt x 180.42224pt.
- [28 <./Samples/LR_zoom_plot.png> <./Samples/SR_zoom_plot.png>] [29 <./Samples/HR_zoom_plot.png>] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 989--991
+ [29 <./Samples/LR_zoom_plot.png> <./Samples/SR_zoom_plot.png>] [30 <./Samples/HR_zoom_plot.png>] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1044
 [][]$\T1/cmtt/m/n/12 https : / / www . kaggle . com / datasets / cristobaltudela /
  []
 
-[31
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{cite.PerceptualLoss}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.995 \end{document}
-                    ] (./repport.aux)
+l.1048 \end{document}
+                     ] (./repport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -926,18 +973,18 @@ Package rerunfilecheck Info: File `repport.out' has not changed.
 (rerunfilecheck)             Checksum: B5F2FE615782CE8905AD87DB04FED9E3;10192.
  ) 
 Here is how much of TeX's memory you used:
- 26836 strings out of 474222
- 486108 string characters out of 5748732
+ 27005 strings out of 474222
+ 489936 string characters out of 5748732
  1936975 words of memory out of 5000000
- 48498 multiletter control sequences out of 15000+600000
+ 48663 multiletter control sequences out of 15000+600000
  575145 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,117p,966b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,9n,117p,945b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on repport.pdf (32 pages, 11145694 bytes).
+Output written on repport.pdf (33 pages, 13984640 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
- 525 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 706 PDF objects out of 1000 (max. 8388607)
+ 562 compressed objects within 6 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 565 words of extra memory for PDF output out of 10000 (max. 10000000)
 
