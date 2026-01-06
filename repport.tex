@@ -906,7 +906,17 @@ Overall, these results highlight the trade-off between quantitative fidelity and
     \caption{Visual comparison between low-resolution input, super-resolved images produced by different models, and the high-resolution ground truth.}
     \label{fig:sr_models_comparison}
 \end{figure}
+this figure presents a qualitative comparison between classical and deep learning–based super-resolution models, including SRCNN, SRResNet, EDSR, ESRGAN, and the proposed Multiscale Frequency-Separated Super-Resolution (MSFSSR) model trained with two different loss configurations: L1 loss and a custom loss combining L1 and perceptual loss.
 
+From a quantitative perspective, the proposed MSFSSR model demonstrates competitive and often superior PSNR and SSIM values compared to established baselines such as SRCNN, SRResNet, and EDSR. In particular, both MSFSSR variants consistently achieve high reconstruction fidelity, indicating effective preservation of structural information and spatial consistency. The MSFSSR model trained with the custom loss (L1 + perceptual) shows a slight improvement in perceptual similarity over the L1-only variant, as reflected by marginally higher SSIM scores in most test samples.
+
+However, despite these strong quantitative results, a qualitative inspection reveals important differences in perceptual quality. While PSNR-optimized models such as EDSR and MSFSSR (L1) tend to produce smoother textures and sharper edges, they often exhibit over-smoothed regions and lack fine-grained high-frequency details, particularly in vegetation, road boundaries, and building textures.
+
+In contrast, ESRGAN produces the most visually realistic results across all evaluated samples. Its outputs exhibit richer textures, sharper details, and more natural high-frequency reconstruction, especially in complex areas such as foliage and urban structures. Although ESRGAN does not consistently achieve the highest PSNR or SSIM scores, its adversarial training enables better perceptual quality, which aligns more closely with human visual perception.
+
+Comparing the two MSFSSR variants, the custom loss formulation (L1 + perceptual) improves visual sharpness and texture representation compared to the L1-only version, reducing excessive smoothness while maintaining structural coherence. Nevertheless, the MSFSSR outputs remain perceptually closer to reconstruction-based models than to GAN-based approaches.
+
+Overall, these results highlight the well-known trade-off between distortion-based metrics (PSNR/SSIM) and perceptual quality. While the proposed MSFSSR model achieves strong quantitative performance and improved perceptual quality with the custom loss, ESRGAN remains the best-performing model in terms of visual realism, making it the most suitable choice for applications where perceptual fidelity is prioritized over numerical reconstruction accuracy.
 \subsection{Samples Visualisation}
 A real-world satellite image of size approximately 3000×3000 pixels was processed using a patch-based inference strategy. The original low-resolution image was partitioned into smaller patches, which were individually fed into the super-resolution model due to GPU memory limitations. Each patch was super-resolved independently, and the outputs were subsequently merged according to their spatial coordinates to reconstruct the full super-resolved image. This approach allows scalable inference on high-resolution imagery while maintaining the fidelity of the reconstructed spatial structure.
 \begin{figure}[H]
