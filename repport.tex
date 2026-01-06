@@ -841,9 +841,17 @@ The right subplot reports the corresponding PSNR evolution. A consistent improve
 
 Overall, the close relationship between training and validation curves suggests good generalization without severe overfitting. The comparative trends indicate that EDSR provides the best performance among the tested models, achieving both lower validation loss and higher validation PSNR in this experimental setting.
 \newline
-
-
-
+\subsubsection{MSFSSR}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM}
+    \caption{Training and validation L1 loss (left) and PSNR (right) comparison for MSFSSR-L1 and MSFSSR with custom loss over 100 epochs.}
+    \label{fig:MSFFSR_training}
+\end{figure}
+this figure presents the training and validation performance of the proposed Multiscale Frequency-Separated Super-Resolution (MSFSSR) models trained with L1 loss (MSFSSR\_L1) and a custom loss combining L1 and perceptual terms (MSFSSR\_CUSTOM). 
+Both models exhibit stable convergence, as reflected by the smooth decrease in L1 loss and the consistent increase in PSNR across epochs. The MSFSSR\_L1 model achieves lower validation loss and higher PSNR values, indicating superior pixel-level reconstruction accuracy.
+In contrast, MSFSSR\_CUSTOM shows slightly higher loss and marginally lower PSNR, which is expected due to the incorporation of perceptual constraints that prioritize high-level structural and semantic features over strict pixel-wise fidelity. Importantly, the close alignment between training and validation curves for both models demonstrates strong generalization and the absence of overfitting.
+Overall, these results highlight the trade-off between quantitative fidelity and perceptual quality, confirming the effectiveness of the MSFSSR architecture under both optimization strategies.
 \section{Infrence and Comparision}
 \subsection{Models Comparision}
 \subsection{Samples Visualisation}

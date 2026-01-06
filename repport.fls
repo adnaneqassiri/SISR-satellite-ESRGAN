@@ -1,9 +1,9 @@
-PWD /home/adnane/Desktop/rapport dl
+PWD /home/yasser/classes/DL26/report/SISR-satellite-ESRGAN
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/adnane/Desktop/rapport dl/repport.tex
+INPUT /home/yasser/classes/DL26/report/SISR-satellite-ESRGAN/repport.tex
 OUTPUT repport.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -433,6 +433,10 @@ INPUT ./plots/val_and_train_comparaison.png
 INPUT ./plots/val_and_train_comparaison.png
 INPUT ./plots/val_and_train_comparaison.png
 INPUT ./plots/val_and_train_comparaison.png
+INPUT ./plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png
+INPUT ./plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png
+INPUT ./plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png
+INPUT ./plots/comparison_MSFSSR_L1_vs_MSFSSR_CUSTOM.png
 INPUT ./Samples/LR_zoom_plot.png
 INPUT ./Samples/LR_zoom_plot.png
 INPUT ./Samples/LR_zoom_plot.png
