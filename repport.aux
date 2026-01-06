@@ -1,16 +1,12 @@
 \relax 
 \providecommand\babel@aux[2]{}
 \@nameuse{bbl@beforestart}
-\catcode `:\active 
-\catcode `;\active 
-\catcode `!\active 
-\catcode `?\active 
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \ifx\qr@savematrix\@undefined\def\qr@savematrix{\begingroup\let\do\@makeother\dospecials\catcode`\{=1\catcode`\}=2\relax \qr@savematrix@int}\def\qr@savematrix@int#1#2#3#4{\endgroup}\fi
 \providecommand \oddpage@label [2]{}
-\babel@aux{french}{}
+\babel@aux{english}{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Problem statement}{3}{subsection.1.2}\protected@file@percent }
@@ -21,32 +17,32 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Data Samples After Patching}}{5}{figure.caption.2}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:patch_extraction}{{1}{5}{Data Samples After Patching}{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Samples vizualisation}{5}{subsection.2.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Data Samples Visualization}}{5}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:samples_visualization}{{2}{5}{Data Samples Visualization}{figure.caption.3}{}}
 \citation{SSIM}
-\citation{LPIPS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Samples vizualisation}{6}{subsection.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Data Samples Visualization}}{6}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:samples_visualization}{{2}{6}{Data Samples Visualization}{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Evaluation Metrics}{6}{subsection.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Peak Signal-to-Noise Ratio (PSNR)}{6}{subsubsection.2.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Structural Similarity Index Measure (SSIM)}{6}{subsubsection.2.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Learned Perceptual Image Patch Similarity (LPIPS)}{6}{subsubsection.2.4.3}\protected@file@percent }
+\citation{LPIPS}
 \citation{SRCNN}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Learned Perceptual Image Patch Similarity (LPIPS)}{7}{subsubsection.2.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Models Development}{7}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}SRCNN: Super-Resolution Convolutional Neural Network}{7}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Global Architecture of SRCNN}{7}{subsubsection.3.1.1}\protected@file@percent }
-\citation{ESRGAN}
-\citation{ResNet}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Global Architecture of SRCNN}{8}{subsubsection.3.1.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Global architecture of the SRCNN model}}{8}{figure.caption.4}\protected@file@percent }
 \newlabel{fig:srcnn_architecture}{{3}{8}{Global architecture of the SRCNN model}{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Network Layers and Mathematical Modeling}{8}{subsubsection.3.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{First layer: Patch extraction and representation}{8}{section*.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Second layer: Nonlinear mapping}{8}{section*.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Third layer: Reconstruction}{8}{section*.7}\protected@file@percent }
-\citation{SubPixel}
+\citation{ESRGAN}
+\citation{ResNet}
+\@writefile{toc}{\contentsline {paragraph}{Third layer: Reconstruction}{9}{section*.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}SRResnet: Super Resolution Residual Network}{9}{subsection.3.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Residual Block}{9}{subsubsection.3.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces residual block}}{9}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:residual-block}{{4}{9}{residual block}{figure.caption.8}{}}
+\citation{SubPixel}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces residual block}}{10}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:residual-block}{{4}{10}{residual block}{figure.caption.8}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Sub-pixel convolution }{10}{subsubsection.3.2.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Sub-pixel convolution}}{10}{figure.caption.9}\protected@file@percent }
 \newlabel{fig:sub-pixel-convolution}{{5}{10}{Sub-pixel convolution}{figure.caption.9}{}}
@@ -59,9 +55,9 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Structure of an optimized residual block in the EDSR model}}{12}{figure.caption.11}\protected@file@percent }
 \newlabel{fig:edsr_resblock}{{7}{12}{Structure of an optimized residual block in the EDSR model}{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Residual Scaling and Training Stability}{12}{subsubsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Overall Architecture of the EDSR Model}{12}{subsubsection.3.3.3}\protected@file@percent }
 \citation{ESRGAN}
 \citation{SRGAN}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Overall Architecture of the EDSR Model}{13}{subsubsection.3.3.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Overall architecture of the EDSR model}}{13}{figure.caption.12}\protected@file@percent }
 \newlabel{fig:edsr_architecture}{{8}{13}{Overall architecture of the EDSR model}{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}ESRGAN: Enhanced Super Resolution GAN}{13}{subsection.3.4}\protected@file@percent }
@@ -73,7 +69,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Architecture of GANs}}{14}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:gan_architecture}{{9}{14}{Architecture of GANs}{figure.caption.13}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Adversarial Loss in ESRGAN}{14}{subsubsection.3.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Networks Architecture}{14}{subsubsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Networks Architecture}{15}{subsubsection.3.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Main Components}{15}{section*.14}\protected@file@percent }
 \@writefile{toc}{\contentsline {subparagraph}{1. Generator Network}{15}{section*.15}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces ESRGAN | Architecture of the Generator}}{15}{figure.caption.16}\protected@file@percent }
@@ -160,4 +156,4 @@
 \bibcite{Adam}{17}
 \bibcite{PyTorch}{18}
 \bibcite{Kaggle}{19}
-\gdef \@abspage@last{33}
+\gdef \@abspage@last{34}

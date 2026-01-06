@@ -1,22 +1,22 @@
-\babel@toc {french}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Problem statement}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Dataset, Patching, and Performance Metrics}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Dataset Description}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Image Dimensions and Patch-Based Preprocessing}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Samples vizualisation}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Samples vizualisation}{6}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Evaluation Metrics}{6}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Peak Signal-to-Noise Ratio (PSNR)}{6}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Structural Similarity Index Measure (SSIM)}{6}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}Learned Perceptual Image Patch Similarity (LPIPS)}{6}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.3}Learned Perceptual Image Patch Similarity (LPIPS)}{7}{subsubsection.2.4.3}%
 \contentsline {section}{\numberline {3}Models Development}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}SRCNN: Super-Resolution Convolutional Neural Network}{7}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Global Architecture of SRCNN}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Global Architecture of SRCNN}{8}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Network Layers and Mathematical Modeling}{8}{subsubsection.3.1.2}%
 \contentsline {paragraph}{First layer: Patch extraction and representation}{8}{section*.5}%
 \contentsline {paragraph}{Second layer: Nonlinear mapping}{8}{section*.6}%
-\contentsline {paragraph}{Third layer: Reconstruction}{8}{section*.7}%
+\contentsline {paragraph}{Third layer: Reconstruction}{9}{section*.7}%
 \contentsline {subsection}{\numberline {3.2}SRResnet: Super Resolution Residual Network}{9}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Residual Block}{9}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Sub-pixel convolution }{10}{subsubsection.3.2.2}%
@@ -24,11 +24,11 @@
 \contentsline {subsection}{\numberline {3.3}EDSR: Enhanced Deep Residual Network}{11}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Enhanced Residual Blocks}{11}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Residual Scaling and Training Stability}{12}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Overall Architecture of the EDSR Model}{12}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Overall Architecture of the EDSR Model}{13}{subsubsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.4}ESRGAN: Enhanced Super Resolution GAN}{13}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}GAN: Generative Adversarial Network}{13}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Adversarial Loss in ESRGAN}{14}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Networks Architecture}{14}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3}Networks Architecture}{15}{subsubsection.3.4.3}%
 \contentsline {paragraph}{Main Components}{15}{section*.14}%
 \contentsline {subparagraph}{1. Generator Network}{15}{section*.15}%
 \contentsline {subparagraph}{2. Residual-in-Residual Dense Blocks (RRDB)}{15}{section*.17}%
