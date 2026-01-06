@@ -15,6 +15,8 @@
 \usepackage{caption}
 
 \usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{xurl} % allows URL line breaking
 
 \usepackage{amssymb} % fournit \mathbb
 % ou \usepackage{amsfonts}
@@ -64,7 +66,7 @@
 \newcommand{\UE}{UAE}
 \newcommand{\sujet}{Sujet du rapport}
 \newcommand{\enseignant}{Pr.Anass Belcaid}
-\newcommand{\eleves}{
+\newcommand{\students}{
     Qassiri Adnane \\
     Nadi Yasser \\
     Jadli said }
@@ -88,7 +90,8 @@ techniques} \par} % Titre principal
     \begin{minipage}{0.5\textwidth}
         \Large
         \raggedright
-        \textbf{Students :} \\ 
+        \textbf{Students :} \\
+        \students
     \end{minipage}
     \hfill
     \begin{minipage}{0.4\textwidth}
@@ -950,11 +953,30 @@ Our experimental analysis confirms that MSFSSR, particularly when trained with a
 Future work may focus on extending this frequency-aware paradigm to higher magnification factors, integrating multispectral or temporal dimensions, and optimizing the architecture for real-time deployment in operational satellite data processing pipelines.
 
 
+\newpage
+\section{Annexes}
+
+\subsection{Project Source Code}
+The complete source code developed for this project is publicly available in the following GitHub repository, ensuring full reproducibility of the proposed methods and experiments:
+\begin{itemize}
+    \item \url{https://github.com/NadiYasser/Satellite_Super_Resulotion0}
+\end{itemize}
+
+\subsection{Dataset}
+The satellite image dataset used in this study is publicly accessible through the following Kaggle repository:
+\begin{itemize}
+    \item \url{https://www.kaggle.com/datasets/cristobaltudela/4x-satellite-image-super-resolution}
+\end{itemize}
+
+\subsection{Pre-trained Models}
+The pre-trained models resulting from the experiments conducted in this work are available at the following link:
+\begin{itemize}
+    \item \url{https://drive.google.com/drive/folders/12lkyKrLpF-BRAsxuu6UhnOTp7_8VC-hr?usp=sharing}
+\end{itemize}
 
 
 
 \newpage
-% \addcontentsline{toc}{section}{Bibliographie}
 \begin{thebibliography}{99}
 
 \bibitem{patch}
